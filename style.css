@@ -12,6 +12,7 @@
   border: 1px solid #e9b869;
   background-color: #86b5c7;
   flex-basis: 50%;
+  width: 100%;
 }
 .fondo {
   border: 1px solid #d4bb1a;
@@ -80,7 +81,7 @@ h2 {
 }
 
 img {
-  width: 600px;
+  width: 100%;
 }
 
 html {
