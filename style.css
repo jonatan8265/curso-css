@@ -56,9 +56,14 @@ p {
   margin: 10px;
 }
 
+body {
+  overflow: hidden;
+}
+
 footer {
   background-image: url(background/pattern3.jpg);
   border: 1px solid #349a05;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -148,6 +153,7 @@ ul {
   z-index: 1;
   position: sticky;
   top: 0px;
+  flex-wrap: wrap;
 }
 .header__nav {
   width: 100%;
