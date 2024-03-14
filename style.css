@@ -56,13 +56,6 @@ p {
   margin: 10px;
 }
 
-<<<<<<< HEAD
-=======
-body {
-  overflow: hidden;
-}
->>>>>>> bec7a71bd748855f6695daa9ac5b08f548fbed01
-
 footer {
   background-image: url(background/pattern3.jpg);
   border: 1px solid #349a05;
@@ -157,11 +150,7 @@ ul {
   z-index: 1;
   position: sticky;
   top: 0px;
-<<<<<<< HEAD
-  
-=======
   flex-wrap: wrap;
->>>>>>> bec7a71bd748855f6695daa9ac5b08f548fbed01
 }
 .header__nav {
   width: 100%;
@@ -327,3 +316,18 @@ ul {
   width: 100%;
 
 }
+
+/* Notas Inicio */
+.nota{
+    border-left: 5px solid rgb(48, 54, 70);
+    padding: 5px 5px 5px 25px;
+    margin: 5px;
+    background-color: #61a1a1;
+    color: white;
+    font-size: 110%;
+}
+code{
+    color: #daebb0;
+    font-size: 1.2rem;
+}
+/* Notas Fin */
