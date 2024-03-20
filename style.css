@@ -173,7 +173,7 @@ ul {
 .header, #header__logotipo img {
   display: block;
   margin: 0px auto;
-  width: 140px;
+  width: 115px;
 }
 
 .header h1 {
@@ -182,35 +182,34 @@ font-size: 40px;
 letter-spacing: 4px;
 
 }
-
+.header h1 a {
+  color: rgb(10, 195, 212);
+  text-decoration: none;
+  font-family: "LexendMega";
+  font-weight: bold;
+}
+/* Barra de Navegacion */
 .header__nav {
   width: 100%;
+  height: 35px;
+  background-color: rgb(7, 111, 120);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   box-shadow: 0px 0px 2px gray;
 
-  .header__nav__ul {
+   .header__nav__ul {
     list-style: none;
     text-decoration: none;
     margin: 0px auto;
-    width: 1000px;
-  }
-
-  .header__nav__ul {
-    list-style: none;
-    text-decoration: none;
-    margin: 0px auto;
-    width: 1000px;
-    line-height: 30px;
+    width: 60%;
   }
 
   .header__nav__ul__li {
-    line-height: 30px;
-    padding-right: 15px;
+    line-height: 33px;
     float: left;
-    border-right: 2px solid gray;
-    background-color: rgba(36, 130, 36, 0.469);
+    border-right: 1px solid grey;
     transition: all 300ms;
+    padding-right: 15px;
   }
 
   .header__nav__ul__li__a {
