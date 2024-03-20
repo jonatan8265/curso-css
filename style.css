@@ -1,3 +1,62 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+p {
+  margin: 10px;
+  font-family: "LexendMega";
+  font-size:  14px;
+  letter-spacing: -0.5px;
+  word-spacing: 2px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+footer {
+  background-image: url(background/pattern3.jpg);
+  border: 1px solid #349a05;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "LexendMega";
+}
+
+h2 {
+  padding-left: 5px;
+  margin-top: 50px;
+  color: #95c786;
+  text-shadow: 1px 1px 1.5px #232222;
+  border-left: #256002 solid 7px;
+  border-bottom: #256002 solid 2px;
+  box-shadow: 1px 1px 1px #e1e8e6;
+  animation-name: linea;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style-position: inside;
+}
+
+@font-face {
+  font-family: "LexendMega";
+  src: url(Fonts/LexendMega-VariableFont_wght.ttf);
+}
+
 .principal {
   display: flex;
   flex-wrap: wrap;
@@ -46,51 +105,6 @@
   }
 }
 
-
-* {
-  font-family: SpaceGrotesk;
-  padding: 0px;
-  margin: 0px;
-}
-p {
-  margin: 10px;
-}
-
-footer {
-  background-image: url(background/pattern3.jpg);
-  border: 1px solid #349a05;
-  flex-wrap: wrap;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 10px;
-}
-
-h2 {
-  padding-left: 5px;
-  margin-top: 50px;
-  color: #95c786;
-  text-shadow: 1px 1px 1.5px #232222;
-  border-left: #256002 solid 7px;
-  border-bottom: #256002 solid 2px;
-  box-shadow: 1px 1px 1px #e1e8e6;
-  animation-name: linea;
-  animation-duration: 10s;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
-}
-
-img {
-  width: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-ul {
-  list-style-position: inside;
-}
 
 .ejercicios-img {
   width: 400px;
@@ -145,13 +159,30 @@ ul {
 
 /* CABECERA */
 .header {
-  background-image: url(background/pattern3.jpg);
-  border: 1px solid #349a05;
-  z-index: 1;
-  position: sticky;
-  top: 0px;
-  flex-wrap: wrap;
+  min-width: 1024px;
+  height: 250px;
+  border: solid 1px #a80e0e;
 }
+
+.header, #header__logotipo {
+  width: 700px;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+
+.header, #header__logotipo img {
+  display: block;
+  margin: 0px auto;
+  width: 140px;
+}
+
+.header h1 {
+text-align: center;
+font-size: 40px;
+letter-spacing: 4px;
+
+}
+
 .header__nav {
   width: 100%;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
