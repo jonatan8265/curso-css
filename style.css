@@ -164,13 +164,13 @@ ul {
   border: solid 1px #a80e0e;
 }
 
-.header, #header__logotipo {
+.header, .header__logotipo {
   width: 700px;
   margin: 0px auto;
   padding-top: 20px;
 }
 
-.header, #header__logotipo img {
+.header, .header__logotipo img {
   display: block;
   margin: 0px auto;
   width: 115px;
