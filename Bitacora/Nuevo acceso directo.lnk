@@ -1,0 +1,265 @@
+/*ESTILOS GENERALES*/
+*{
+    padding:0px;
+    margin:0px;
+}
+
+@font-face {
+    font-family: "nevis";
+    src: url("fonts/nevis.eot");
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype")
+        url("fonts/nevis.woff") format("woff"),
+        url("fonts/nevis.ttf") format("truetype"),
+        url("fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.header {
+    box-sizing: border-box;
+    min-width: 100%;
+    height: 250px;
+    background-image: url(Imagenes/paven.png) width 100%;
+    margin: 0px auto;
+    border: solid 5px red;
+}
+.header,
+.header__logo {
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+.header,
+.header__logo img {
+    display: block;
+    text-align: center;
+    margin: 0px auto; 
+    width: 140px;
+}
+
+.header__h1 {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms;
+}
+.header__h1__a {
+    color: rgb(10, 195, 212);
+    text-decoration: none;
+    font-family: nevis;
+}
+
+/* Barra de Navegacion */
+.navheader {
+    box-sizing: border-box;
+    height: 45px;
+    background-color: rgb(7, 111, 120);
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+    border: solid 5px red;
+}
+.navheader ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 60%;
+}
+
+.navheader ul li {
+    line-height: 33px;
+    float: left;
+    border-right: 1px solid grey;
+    transition: all 300ms;
+}
+
+.navheader ul li a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navheader ul li a:first-child {
+    border-left: 1px solid grey;
+}
+
+.navheader ul li:hover {
+    background-color: rgb(10, 195, 212);
+    box-shadow: 0px 0px 4px inset rgb(7, 111, 120);
+}
+
+/* Menu Desplegable */
+.navheader ul li ul {
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+.navheader ul li:hover ul {
+    display: block;
+}
+
+.navheader ul li:hover ul  li {
+    background-color: #f2f1f0;
+    border-bottom: 1px solid gray;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 10px;
+    width: 100%;
+}
+.navheader ul li:hover ul li a {
+    color: #182F29;
+}
+
+.paginas a button:hover {
+    background-color: #ff05c0;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Fin Barra de Navegacion */
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #c0dbb2;
+    border: 5px solid red;
+}
+
+h2 {
+    color: #349a05;
+    text-align: center;
+}
+
+img {
+    width: 600px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 16px 0;
+}
+
+table {
+    color: gray;
+    font-size: 18px;
+    margin: 10px;
+}
+thead{
+    background: #7a69e9;
+}
+
+th{
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+td{
+padding: 15px;
+border-bottom: solid 1px grey;
+
+}
+
+tbody tr:hover{
+    background: #f487f476;
+}
+
+#root {
+    box-sizing:border-box;
+    border: solid 10px rgb(10, 195, 212);
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    align-content: stretch;
+    border: 5px solid red;
+    background-color: #D9ABB6;
+    margin: 0px auto;
+    box-sizing: border-box;
+    
+}
+.aside-left,
+.aside-right {
+    border: 5px solid #91e969;
+    background-color: #e7afbcbd;
+    list-style-position: inside;
+    flex-basis: 25%;
+}
+.aside-right__nav,
+.aside-left__nav {
+    border: 1px solid #cccccc;
+    position: fixed;
+}
+
+.aside-left__nav__bar {
+    border: 1px solid #ffffff;
+    padding: 2px;
+    position: sticky ;
+    top: 550px;
+}
+.aside-left__nav__bar button {
+    font-size: 10px;
+    margin: 5px;
+}
+
+.aside-left__nav__bar button:hover{
+    background: #076f78;
+    color: #ffffff;
+    font-size: 12px;
+    
+}
+
+
+
+.content {
+    border: 5px solid #7a69e9;
+    background-color: #BCCFD5;
+    flex-basis: 60%;
+    
+}
+.fondo {
+    border: 1px solid #d4bb1a;
+    background-color: #182F29;
+}
+
+.pruebaparrafo {
+    color: #349a05;
+    border: 1px solid black;
+}
+
+.tabla {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Notas Inicio */
+.nota{
+    border-left: 5px solid rgb(48, 54, 70);
+    padding: 5px 5px 5px 25px;
+    margin: 5px;
+    background-color: #61a1a1;
+    color: white;
+    font-size: 110%;
+}
+code{
+    color: #daebb0;
+    font-size: 1.2rem;
+}
+/* Notas Fin */
+/* imagenes de codigo */
+.img-codigo{
+    box-shadow: 0px 5px 10px hsla(0, 0%, 20%, 0.68);
+}
