@@ -6,13 +6,17 @@
 
 }
 p {
+  /*Box Model*/
   margin: 10px;
+
+  /*Tipografia*/
   font-family: "LexendMega";
   font-size:  14px;
-  letter-spacing: -0.5px;
-  word-spacing: 2px;
-  line-height: 22px;
   font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+  word-spacing: 2px;
+  
 }
 
 footer {
@@ -50,6 +54,36 @@ html {
 }
 ul {
   list-style-position: inside;
+}
+
+table {
+color: gray;
+font-size:14px;
+  
+}
+
+
+thead{
+background: purple;
+}
+
+th{
+color:white;
+padding:20px 15px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+
+td {
+	padding:		15px;
+  	border-bottom: 	solid grey;
+}
+
+
+tbody tr:hover {
+  background: rgba(243, 103, 199, 0.4)
+
 }
 
 @font-face {
